@@ -37,7 +37,7 @@ and much more!
 1:46:45 - Adding in Review information\
 1:54:25 - Adding in Location information\
 2:06:01 - Adding Links with Next.js\
-2:07:15 - Building our AirBnB’s home page\
+2:07:15 - Building our AirBnB's home page\
 2:17:40 - Building our NavBar component\
 2:21:30 - Adding our AirBnB logo\
 2:23:35 - Adding a Cluster Map\
@@ -81,3 +81,19 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+---
+
+## Project Structure
+
+```
+airbnb-sanity-frontend/
+├── components/        # Reusable React components (NavBar, Map, PropertyCard, etc.)
+├── images/            # Static image assets used throughout the UI
+├── pages/             # Next.js file-based routing (index.js, [property].js, _app.js)
+├── public/            # Publicly served static files (favicon, etc.)
+├── styles/            # Global and component-level CSS files
+├── sanity.js          # Sanity client configuration (project ID, dataset, CDN)
+└── utils.js           # Shared utility/helper functions
+```
+
+> For a full walkthrough of how these pieces fit together, see [CONTRIBUTING.md](./CONTRIBUTING.md).
