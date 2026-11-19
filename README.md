@@ -81,3 +81,39 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Contributing
+
+We welcome contributions to this project! Whether you're fixing bugs, adding features, or improving documentation, here's how you can help:
+
+### Reporting Issues
+
+If you encounter a bug or have a suggestion, please open an issue on [GitHub](https://github.com/danielbryonq/airbnb-sanity-frontend/issues). When reporting an issue, please include:
+- A clear description of the problem
+- Steps to reproduce the issue
+- Any relevant error messages or screenshots
+- Your environment (Node version, OS, etc.)
+
+### Submitting Pull Requests
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature-name`)
+3. Make your changes and commit them with clear messages
+4. Push your branch to your fork
+5. Open a pull request with a description of your changes
+
+### Code Style
+
+- Follow the existing code style in the repository
+- Use meaningful variable and function names
+- Add comments for complex logic
+- Test your changes before submitting a pull request
+
+### Prerequisites
+
+Before contributing, make sure you have:
+- Node.js installed
+- A Sanity.io project set up (see the tutorial link above)
+- Access to Google Maps API credentials (if working with map features)
+
+Thank you for contributing! 🙏
+
