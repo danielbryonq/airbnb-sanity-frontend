@@ -1,17 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
+:root {
+  --bg: #fff;
+  --text: #222;
+  --surface: #f8f8f8;
+  --border: rgb(221,221,221);
+  --shadow: rgb(0 0 0 / 12%);
+}
+
+:root[data-theme="dark"] {
+  --bg: #121212;
+  --text: #eaeaea;
+  --surface: #1e1e1e;
+  --border: #333;
+  --shadow: rgb(0 0 0 / 60%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121212;
+    --text: #eaeaea;
+    --surface: #1e1e1e;
+    --border: #333;
+    --shadow: rgb(0 0 0 / 60%);
+  }
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .nav {
   position: sticky;
   z-index: 100;
-  box-shadow: rgb(0 0 0 /12%) 0 6px 16px;
+  box-shadow: var(--shadow) 0 6px 16px;
   padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-toggle {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-family: inherit;
+  cursor: pointer;
+  min-width: 90px;
+  min-height: 34px;
 }
 
 .logo {
@@ -40,9 +84,9 @@ body {
 .price-box {
   width: 35%;
   height: 250px;
-  border: 1px solid rgb(221,221,221);
+  border: 1px solid var(--border);
   border-radius: 12px;
-  box-shadow: rgb( 0 0 0 / 12%) 0 6px 16px;
+  box-shadow: var(--shadow) 0 6px 16px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -83,7 +127,7 @@ body {
 .feed-container {
   width: 50%;
   height: 100vh;
-  background-color: #f8f8f8;
+  background-color: var(--surface);
   padding: 20px;
 }
 
@@ -122,5 +166,5 @@ body {
 }
 
 .line {
-  border: 1px solid grey;
+  border: 1px solid var(--border);
 }
